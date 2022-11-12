@@ -1,0 +1,111 @@
+[ {
+    "id" : 1,
+    "firstName" : "Nannie",
+    "role" : "USER",
+    "lastName" : "Phalen",
+    "email" : "user@test.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "165.13.105.176",
+    "salary" : 24646
+  }, {
+    "id" : 2,
+    "firstName" : "Johnny",
+    "role" : "USER",
+    "lastName" : "Cappetta",
+    "email" : "johnny2@gmail.com",
+    "password" : "password",
+    "gender" : "Male",
+    "ipAddress" : "14.181.119.37",
+    "salary" : 70920
+  }, {
+    "id" : 3,
+    "firstName" : "Broderick",
+    "role" : "USER",
+    "lastName" : "Daffron",
+    "email" : "broderick3@yandex.ru",
+    "password" : "password",
+    "gender" : "Male",
+    "ipAddress" : "75.28.223.236",
+    "salary" : 41172
+  }, {
+    "id" : 4,
+    "firstName" : "Theresa",
+    "role" : "USER",
+    "lastName" : "Zufall",
+    "email" : "theresa4@aol.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "8.186.169.7",
+    "salary" : 52735
+  }, {
+    "id" : 5,
+    "firstName" : "Robert",
+    "role" : "USER",
+    "lastName" : "Fraizer",
+    "email" : "robert5@aol.com",
+    "password" : "password",
+    "gender" : "Male",
+    "ipAddress" : "63.45.216.176",
+    "salary" : 45655
+  }, {
+    "id" : 6,
+    "firstName" : "Coralee",
+    "role" : "USER",
+    "lastName" : "Gauldin",
+    "email" : "coralee6@yahoo.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "104.11.9.248",
+    "salary" : 13013
+  }, {
+    "id" : 7,
+    "firstName" : "Jamey",
+    "role" : "USER",
+    "lastName" : "Dodgen",
+    "email" : "jamey7@aol.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "236.214.172.0",
+    "salary" : 44694
+  }, {
+    "id" : 8,
+    "firstName" : "Matt",
+    "role" : "USER",
+    "lastName" : "Terpening",
+    "email" : "matt8@yandex.ru",
+    "password" : "password",
+    "gender" : "Male",
+    "ipAddress" : "177.138.54.153",
+    "salary" : 31943
+  }, {
+    "id" : 9,
+    "firstName" : "Evan",
+    "role" : "USER",
+    "lastName" : "Sprake",
+    "email" : "evan9@gmail.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "156.60.53.86",
+    "salary" : 23250
+  }, {
+    "id" : 11,
+    "firstName" : "Admin_brittanie",
+    "role" : "ADMIN",
+    "lastName" : "Crisafulli",
+    "email" : "admin_brittanie1@yandex.ru",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "164.190.142.198",
+    "salary" : 70241
+  }, {
+    "id" : 12,
+    "firstName" : "Admin_vera",
+    "role" : "ADMIN",
+    "lastName" : "Gregston",
+    "email" : "admin@test.com",
+    "password" : "password",
+    "gender" : "Female",
+    "ipAddress" : "71.198.178.66",
+    "salary" : 58706
+  } ]

@@ -1,0 +1,212 @@
+{
+	"variables": [],
+	"info": {
+		"name": "mockserver",
+		"_postman_id": "7c7d979b-2f34-3f79-66c9-2100a56a347c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"url": "http://localhost:4200/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"email\" : \"user@test.com\",\r\n    \"password\" : \"password\"\r\n   \r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"url": "http://localhost:4200/auth/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"firstName\" : \"Nannie\",\r\n    \"role\" : \"USER\",\r\n    \"lastName\" : \"Phalen\",\r\n    \"email\" : \"anotheruser454@test.com\",\r\n    \"password\" : \"password\",\r\n    \"gender\" : \"Female\",\r\n    \"salary\" : 24646\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "registeradmin",
+			"request": {
+				"url": "http://localhost:4200/auth/registeradmin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImZpcnN0TmFtZSI6IkFkbWluX3ZlcmEiLCJyb2xlIjoiQURNSU4iLCJsYXN0TmFtZSI6IkdyZWdzdG9uIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsInBhc3N3b3JkIjoiIiwiZ2VuZGVyIjoiRmVtYWxlIiwiaXBBZGRyZXNzIjoiNzEuMTk4LjE3OC42NiIsInNhbGFyeSI6NTg3MDYsImlhdCI6MTY2ODEwMTI3MiwiZXhwIjoxNjY4MTA0ODcyfQ.Ot7X1UGw9T0Bok1tX4I-PCE5eEBYYYq10j7Dw2_0lSE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"firstName\" : \"Nannie\",\r\n    \"role\" : \"USER\",\r\n    \"lastName\" : \"Phalen\",\r\n    \"email\" : \"anotheradmd5656din@test.com\",\r\n    \"password\" : \"password\",\r\n    \"gender\" : \"Female\",\r\n    \"salary\" : 24646\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "initiatepayment",
+			"request": {
+				"url": "http://localhost:4200/payments/initate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImZpcnN0TmFtZSI6IkFkbWluX3ZlcmEiLCJyb2xlIjoiQURNSU4iLCJsYXN0TmFtZSI6IkdyZWdzdG9uIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImlwQWRkcmVzcyI6IjcxLjE5OC4xNzguNjYiLCJzYWxhcnkiOjU4NzA2LCJpYXQiOjE2NjgyMjc5ODYsImV4cCI6MTY2ODMxNDM4Nn0.hcbPQulaBf7cD_4wvDmw1CLgy_IO4WlwE_k-UPaJzlg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"items\": [{ \"id\": \"xl-tshirt\" }],\r\n            \"amount\": 200\r\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "validatepayment",
+			"request": {
+				"url": "http://localhost:4200/payments/validate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImZpcnN0TmFtZSI6IkFkbWluX3ZlcmEiLCJyb2xlIjoiQURNSU4iLCJsYXN0TmFtZSI6IkdyZWdzdG9uIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImlwQWRkcmVzcyI6IjcxLjE5OC4xNzguNjYiLCJzYWxhcnkiOjU4NzA2LCJpYXQiOjE2NjgyMjc5ODYsImV4cCI6MTY2ODMxNDM4Nn0.hcbPQulaBf7cD_4wvDmw1CLgy_IO4WlwE_k-UPaJzlg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"razorpay_payment_id\": \"pay_Kf0HMdfrPHr2OJ\",\r\n  \"razorpay_order_id\": \"order_Kf0HGZwYHyAfDx\",\r\n  \"razorpay_signature\": \"d4eaabe250729f30c4a1dacd1dcd9e5fd8833b26f0b962435d67823ac5c03130\",\r\n  \"orderId\": 20\r\n}\r\n"
+				},
+				"description": "update parameters based on the response received from razorpayui"
+			},
+			"response": []
+		},
+		{
+			"name": "payment error",
+			"request": {
+				"url": "http://localhost:4200/payments/error",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImZpcnN0TmFtZSI6IkFkbWluX3ZlcmEiLCJyb2xlIjoiQURNSU4iLCJsYXN0TmFtZSI6IkdyZWdzdG9uIiwiZW1haWwiOiJhZG1pbkB0ZXN0LmNvbSIsImdlbmRlciI6IkZlbWFsZSIsImlwQWRkcmVzcyI6IjcxLjE5OC4xNzguNjYiLCJzYWxhcnkiOjU4NzA2LCJpYXQiOjE2NjgyMjc5ODYsImV4cCI6MTY2ODMxNDM4Nn0.hcbPQulaBf7cD_4wvDmw1CLgy_IO4WlwE_k-UPaJzlg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"error\": {\r\n    \"code\": \"BAD_REQUEST_ERROR\",\r\n    \"description\": \"Your payment has been cancelled. Try again or complete the payment later.\",\r\n    \"source\": \"customer\",\r\n    \"step\": \"payment_authentication\",\r\n    \"reason\": \"payment_cancelled\",\r\n    \"metadata\": {\r\n      \"payment_id\": \"pay_Kf0JKRICqnOxyO\",\r\n      \"order_id\": \"order_Kf0JFgDLriNCAw\"\r\n    }\r\n  },\r\n  \"orderId\": 21\r\n}\r\n"
+				},
+				"description": "update parameters based on the response received from razorpayui"
+			},
+			"response": []
+		},
+		{
+			"name": "companies",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4200/companies?count=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"companies"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "100",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"email\" : \"admin@test.com\",\r\n    \"password\" : \"password\"\r\n   \r\n  }"
+				},
+				"description": "count parameter to be number of companies"
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"url": "http://localhost:4200/api/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "productbyid",
+			"request": {
+				"url": "http://localhost:4200/api/products/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
